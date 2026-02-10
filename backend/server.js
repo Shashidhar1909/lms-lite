@@ -24,6 +24,11 @@ const enrollmentRoutes = require('./routes/enrollmentRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
 const path = require('path');
 
+app.get('/', (req, res) => {
+  res.send('LMS Lite backend is live');
+});
+
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
